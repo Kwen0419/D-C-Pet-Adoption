@@ -1,0 +1,298 @@
+
+.mg {
+    height: 70px;
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* 定义从上到下的动画 */
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%); /* 从上方外面开始 */
+    opacity: 0; /* 开始时透明 */
+  }
+  100% {
+    transform: translateY(0); /* 移动到原位置 */
+    opacity: 1; /* 完全可见 */
+  }
+}
+
+/* 应用动画 */
+.slide-in-top {
+  animation: slideInFromTop 1s ease-out forwards; /* 动画时长1秒，动画结束后保持最终状态 */
+}
+
+
+/* 定义从左到右的动画 */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%); /* 从左侧外面开始 */
+    opacity: 0; /* 开始时透明 */
+  }
+  100% {
+    transform: translateX(0); /* 移动到原位置 */
+    opacity: 1; /* 完全可见 */
+  }
+}
+
+/* 应用动画 */
+.slide-in-left {
+  animation: slideInFromLeft 1s ease-out forwards; /* 动画时长1秒，动画结束后保持最终状态 */
+}
+
+
+/* 定义动画 */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%); /* 从右侧外面开始 */
+    opacity: 0; /* 开始时透明 */
+  }
+  100% {
+    transform: translateX(0); /* 移动到原位置 */
+    opacity: 1; /* 完全可见 */
+  }
+}
+
+/* 应用动画 */
+.slide-in-right {
+  animation: slideInFromRight 1s ease-out forwards; /* 动画时长1秒，动画结束后保持最终状态 */
+}
+
+.slide-in {
+  animation: slideInFromBottom 1s ease-out;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    min-height: 300px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+    /* Ensures the left and right columns are stacked */
+    .col-lg-5, .col-lg-7 {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  
+    /* Adjust button size and padding for mobile */
+    .btn {
+      padding: 10px 20px;
+      width: 100%;
+    }
+  }
+
+  /* Hide arrows on small screens */
+@media (max-width: 991px) {
+  .arrow-container {
+      display: none;
+  }
+}
+
+/* Show arrows on large screens */
+@media (min-width: 992px) {
+  .arrow-container {
+      display: block;
+  }
+}
+
+  
+  .bgn {
+    color: #CFC9C0 
+    transparent 50%;
+  }
+/* font apply */
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 6.2rem;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+/* colour bar */
+
+.colour1 {
+    background-color: rgb(252, 252, 252);
+}
+
+.colour2 {
+    background-color: #CFC9C0;
+}
+
+.colour3 {
+    background-color: #D2852A;
+}
+
+.colour7 {
+    background-color: #FFC57C;
+}
+
+.colour4 {
+    background-color: #52BEB5;
+}
+
+.colour5 {
+    background-color: #B2A79A;
+}
+
+.colour6 {
+    background-color: rgb(0, 0, 0);
+}
+
+.bg-smoothblue {
+    background-color: rgb(171, 171, 239);
+}
+
+.bg-warning-subtle {
+    background-color: #921A40;
+}
+
+.bg-warning-subtle1 {
+    background-color: #C75B7A;
+}
+
+.bg-warning-subtle2 {
+    background-color: #b72626;
+}
+
+.bg-warning-subtle3 {
+    background-color: #792d13;
+}
+
+.bg-warning-subtle4 {
+    background-color: #aaba19;
+}
+
+.bg-warning-subtle5 {
+    background-color: #5ebb6c;
+}
+
+.bg-purple {
+    background-color: #e6aad2;
+}
+
+.bg-purple1 {
+    background-color: #b71897;
+}
+
+.bg-purple2 {
+    background-color: #5d044d;
+}
+
+.bg-purple3 {
+    background-color: #4b1f49;
+}
+
+.bg-green {
+    background-color: #7bcf78;
+}
+
+.bg-green1 {
+    background-color: #09ff00;
+}
+
+.bg-green2 {
+    background-color: #06b900;
+}
+
+.bg-green3 {
+    background-color: #046f00;
+}
+
+.bg-green4 {
+    background-color: #023a00;
+}
+
+.bg-green5 {
+    background-color: #122512;
+}
+
+.bg-yellow {
+    background-color: #c8d212;
+}
+
+.bg-yellow1{
+    background-color: #93970e;
+}
